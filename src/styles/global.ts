@@ -4,7 +4,16 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+
+    font-family: 'Exo', sans-serif;
+  }
+
+  img {
+    object-fit: contain;
   }
 
   html, body, #__next {
@@ -13,5 +22,10 @@ export default createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
+    > div {
+      width: 100%;
+    }
   }
 `;
