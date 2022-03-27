@@ -9,14 +9,14 @@ export const Container = styled.div`
   justify-content: center;
 
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
 
   * {
     color: rgba(255, 255, 255, 0.5);
   }
 
   img {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 `;
 
@@ -50,13 +50,22 @@ export const ContentContainer = styled.div`
     }
   }
 
-  > * + * {
+  > div + div {
     margin-top: 0.75rem;
+  }
+
+  > p {
+    margin-bottom: 0.5rem;
   }
 
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 1.5rem 0 1.75rem;
+
+    > p {
+      margin-bottom: 0;
+    }
 
     > * + * {
       margin-top: 0;
@@ -71,7 +80,7 @@ export const IconsContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  max-width: 200px;
+  max-width: 160px;
 
   a {
     width: 20%;
@@ -84,6 +93,7 @@ export const IconsContainer = styled.div`
 
     img {
       width: 100%;
+      opacity: 0.8;
     }
   }
 `;
