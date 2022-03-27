@@ -45,7 +45,7 @@ export const ContentContainer = styled.div`
     justify-content: flex-start;
 
     img {
-      width: 2rem;
+      width: 1.25rem;
       margin-right: 1rem;
     }
   }
@@ -75,7 +75,7 @@ export const IconsContainer = styled.div`
 
   a {
     width: 20%;
-    max-width: 2rem;
+    max-width: 1.875rem;
     transition: filter 0.4s;
 
     &:hover {

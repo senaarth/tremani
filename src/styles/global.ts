@@ -24,6 +24,7 @@ export default createGlobalStyle`
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
+    background-color: #f3f2f0;
   }
 `;
 
@@ -33,7 +34,6 @@ export const PageContainer = styled.div`
   align-items: center;
 
   width: 100%;
-  max-width: 910px;
   padding-bottom: 7.25rem;
 
   .banner {
@@ -51,7 +51,6 @@ export const PageContainer = styled.div`
   }
 
   p {
-    width: 80%;
     color: #666666;
     font-size: 1.125rem;
     line-height: 1.5rem;

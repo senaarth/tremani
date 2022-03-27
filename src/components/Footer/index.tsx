@@ -8,7 +8,11 @@ export function Footer() {
       <ContentContainer>
         <p>Copyright © {new Date().getFullYear()}</p>
         <div className="row">
-          <img src="/images/ico-contato.png" alt="Icone de E-mail" />
+          <img
+            src="/images/ico-contato.png"
+            alt="Icone de E-mail"
+            style={{ width: "1.75rem" }}
+          />
           <a href="mailto:contato@vilatremani.com.br">
             contato@vilatremani.com.br
           </a>
