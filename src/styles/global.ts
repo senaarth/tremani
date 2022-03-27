@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   * {
@@ -23,9 +23,40 @@ export default createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
+  }
+`;
 
-    > div {
-      width: 100%;
-    }
+export const PageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 910px;
+  padding-bottom: 7.25rem;
+
+  .banner {
+    width: 100vw;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 2.5px;
+    color: #425d73;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  p {
+    width: 80%;
+    color: #666666;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 7.5rem;
+    font-weight: 500;
   }
 `;
