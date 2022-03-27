@@ -29,6 +29,8 @@ export default createGlobalStyle`
 `;
 
 export const PageContainer = styled.div`
+  transform: translateY(-6rem);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +41,8 @@ export const PageContainer = styled.div`
   .banner {
     width: 100vw;
     margin-bottom: 3rem;
+    min-height: 15rem;
+    object-fit: cover;
   }
 
   h1 {
@@ -57,5 +61,7 @@ export const PageContainer = styled.div`
     text-align: center;
     margin-bottom: 7.5rem;
     font-weight: 500;
+    max-width: 600px;
+    width: 90%;
   }
 `;
