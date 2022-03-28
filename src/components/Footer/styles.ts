@@ -100,6 +100,10 @@ export const IconsContainer = styled.div`
     max-width: 1.875rem;
     transition: filter 0.4s;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &:hover {
       filter: brightness(0.6);
     }
