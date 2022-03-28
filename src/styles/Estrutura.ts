@@ -13,7 +13,7 @@ export const ListContainer = styled.div`
   margin-bottom: 8.5rem;
 
   @media (min-width: 1067px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 `;
 
@@ -46,7 +46,8 @@ export const ListItem = styled.div`
   }
 
   @media (min-width: 1067px) {
-    width: 30%;
-    justify-content: flex-start;
+    width: 33.33%;
+    max-width: 20rem;
+    justify-content: center;
   }
 `;
