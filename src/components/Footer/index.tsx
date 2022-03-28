@@ -18,23 +18,39 @@ export function Footer() {
           </a>
         </div>
         <div className="row">
-          <img src="/images/ico-telefone.png" alt="Icone de Telefone" />
+          <img
+            src="/images/ico-telefone.png"
+            alt="Icone de Telefone"
+            style={{ opacity: 0.4 }}
+          />
           <p>
             <span style={{ fontSize: "0.75rem" }}>11</span> 4703.4616 •
             993768686
           </p>
         </div>
         <IconsContainer>
-          <a href="/" target="_blank">
+          <a
+            href="https://www.facebook.com/vilatremani/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="/images/ico-facebook.png" alt="Ícone do facebook" />
           </a>
-          <a href="/" target="_blank">
+          <a
+            href="https://www.instagram.com/vilatremani/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="/images/ico-instagram.png" alt="Ícone do instagram" />
           </a>
-          <a href="/" target="_blank">
+          <a
+            href="https://api.whatsapp.com/send?phone=5511993768686&app=facebook&entry_point=page_cta&fbclid=IwAR391KpqeGqhApF-awb8zKgYV0uT-EisxOi_F310JsLIQBGHH4aL8SuKSD8"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="/images/ico-whatsapp.png" alt="Ícone do whatsapp" />
           </a>
-          <a href="/" target="_blank">
+          <a href="/">
             <img src="/images/ico-pinterest.png" alt="Ícone do pinterest" />
           </a>
         </IconsContainer>

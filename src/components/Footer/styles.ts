@@ -17,6 +17,7 @@ export const Container = styled.div`
 
   img {
     opacity: 0.6;
+    filter: grayscale(1);
   }
 `;
 
@@ -44,6 +45,14 @@ export const ContentContainer = styled.div`
     align-items: center;
     justify-content: flex-start;
 
+    /* a {
+      transition: opacity 0.4s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    } */
+
     img {
       width: 1.25rem;
       margin-right: 1rem;
@@ -70,6 +79,10 @@ export const ContentContainer = styled.div`
     > * + * {
       margin-top: 0;
     }
+
+    > div + div {
+      margin-top: 0;
+    }
   }
 `;
 
@@ -88,12 +101,12 @@ export const IconsContainer = styled.div`
     transition: filter 0.4s;
 
     &:hover {
-      filter: brightness(0.8);
+      filter: brightness(0.6);
     }
 
     img {
       width: 100%;
-      opacity: 0.8;
+      opacity: 0.4;
     }
   }
 `;
