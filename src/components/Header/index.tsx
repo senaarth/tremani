@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "next/link";
+
+import { HeaderLink } from "../HeaderLink";
 
 import { Container, ContentContainer, Navigation, Hamburguer } from "./styles";
 
@@ -27,25 +28,25 @@ export function Header() {
         <Navigation className={menuOpen ? "active" : ""}>
           <ul>
             <li onClick={() => handleClose()}>
-              <Link href="/tremani">TREMANI</Link>
+              <HeaderLink href="/tremani" label="TREMANI" />
             </li>
             <li onClick={() => handleClose()}>
-              <Link href="/estrutura">ESTRUTURA</Link>
+              <HeaderLink href="/estrutura" label="ESTRUTURA" />
             </li>
             <li onClick={() => handleClose()}>
-              <Link href="/social">SOCIAL</Link>
+              <HeaderLink href="/social" label="SOCIAL" />
             </li>
             <li onClick={() => handleClose()}>
-              <Link href="/corporativo">CORPORATIVO</Link>
+              <HeaderLink href="/corporativo" label="CORPORATIVO" />
             </li>
             <li onClick={() => handleClose()}>
-              <Link href="/contato">CONTATO</Link>
+              <HeaderLink href="/contato" label="CONTATO" />
             </li>
             <li onClick={() => handleClose()}>
-              <Link href="/localizacao">LOCALIZAÇÃO</Link>
+              <HeaderLink href="/localizacao" label="LOCALIZAÇÃO" />
             </li>
             <li onClick={() => handleClose()}>
-              <Link href="/galeria">GALERIA</Link>
+              <HeaderLink href="/galeria" label="GALERIA" />
             </li>
           </ul>
         </Navigation>

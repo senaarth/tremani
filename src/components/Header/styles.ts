@@ -78,6 +78,11 @@ export const Navigation = styled.nav`
       a {
         font-size: 1rem;
         letter-spacing: 2.5px;
+
+        &.active {
+          color: white;
+          font-weight: 500;
+        }
       }
 
       & + li {
