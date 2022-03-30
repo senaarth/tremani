@@ -18,7 +18,8 @@ export const Container = styled.div`
     color: rgba(255, 255, 255, 0.5);
   }
 
-  a {
+  a,
+  button {
     cursor: pointer;
     transition: filter 0.2s;
 
@@ -75,7 +76,8 @@ export const Navigation = styled.nav`
     li {
       list-style: none;
 
-      a {
+      a,
+      button {
         font-size: 1rem;
         letter-spacing: 2.5px;
 
@@ -83,6 +85,12 @@ export const Navigation = styled.nav`
           color: white;
           font-weight: 500;
         }
+      }
+
+      button {
+        outline: none;
+        background: transparent;
+        border: 0;
       }
 
       & + li {

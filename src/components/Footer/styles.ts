@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 `;
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.footer`
   height: 100%;
   width: 90%;
   max-width: 1260px;

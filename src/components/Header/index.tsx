@@ -1,10 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 import { HeaderLink } from "../HeaderLink";
 
 import { Container, ContentContainer, Navigation, Hamburguer } from "./styles";
 
 export function Header() {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   function handleClose() {
@@ -39,8 +41,26 @@ export function Header() {
             <li onClick={() => handleClose()}>
               <HeaderLink href="/corporativo" label="CORPORATIVO" />
             </li>
-            <li onClick={() => handleClose()}>
-              <HeaderLink href="/contato" label="CONTATO" />
+            <li>
+              <button
+                type="button"
+                onClick={() => {
+                  handleClose();
+
+                  const agende = document.querySelector("#agende");
+
+                  if (!agende) {
+                    router.push({
+                      pathname: "/tremani/",
+                      query: { scroll: true },
+                    });
+                  }
+
+                  agende?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                CONTATO
+              </button>
             </li>
             <li onClick={() => handleClose()}>
               <HeaderLink href="/localizacao" label="LOCALIZAÇÃO" />

@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import { Agende } from "../components/Agende";
 
@@ -11,6 +12,23 @@ import { PageContainer } from "../styles/global";
  */
 
 export default function Tremani(): JSX.Element {
+  const router = useRouter();
+  const { query } = router;
+
+  React.useEffect(() => {
+    if (query.scroll) {
+      setTimeout(() => {
+        const footer = document.querySelector("footer");
+
+        footer.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "end",
+        });
+      }, 500);
+    }
+  }, [query]);
+
   return (
     <PageContainer>
       <Head>

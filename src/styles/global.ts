@@ -23,8 +23,8 @@ export default createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    overflow-x: hidden;
     background-color: #f3f2f0;
+    overflow-x: hidden;
   }
 `;
 
@@ -36,7 +36,7 @@ export const PageContainer = styled.div`
   align-items: center;
 
   width: 100%;
-  padding-bottom: 7.25rem;
+  /* padding-bottom: 7.25rem; */
 
   .banner {
     width: 100vw;
