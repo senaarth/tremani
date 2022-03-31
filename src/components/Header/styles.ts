@@ -11,17 +11,15 @@ export const Container = styled.div`
   justify-content: center;
 
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.7 !important;
   position: relative;
 
   * {
     color: rgba(255, 255, 255, 0.5);
   }
 
-  a,
   button {
     cursor: pointer;
-    transition: filter 0.2s;
 
     &:hover {
       filter: brightness(0.6);
@@ -30,9 +28,9 @@ export const Container = styled.div`
 
   transition: opacity 0.6s;
 
-  @media (max-width: 1160px) {
+  @media (max-width: 1200px) {
     &.active {
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
 `;
@@ -76,14 +74,17 @@ export const Navigation = styled.nav`
     li {
       list-style: none;
 
-      a,
       button {
         font-size: 1rem;
         letter-spacing: 2.5px;
 
-        &.active {
+        &.active,
+        &:disabled {
           color: white;
           font-weight: 500;
+
+          filter: brightness(1) !important;
+          cursor: default;
         }
       }
 
@@ -101,7 +102,7 @@ export const Navigation = styled.nav`
     }
   }
 
-  @media (max-width: 1160px) {
+  @media (max-width: 1200px) {
     position: absolute;
     padding-bottom: 2rem;
 
@@ -153,10 +154,6 @@ export const Hamburguer = styled.div`
   cursor: pointer;
   transition: filter 0.2s;
 
-  &:hover {
-    filter: brightness(0.6);
-  }
-
   &.active {
     span.line1 {
       transform: rotate(-45deg) translate(-8px, 8px);
@@ -171,7 +168,7 @@ export const Hamburguer = styled.div`
     }
   }
 
-  @media (min-width: 1160px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 `;

@@ -61,6 +61,7 @@ export default function Galeria(): JSX.Element {
             {items?.map((item) => {
               return (
                 <img
+                  key={`galeria-${item}`}
                   className="embla__slide"
                   src={`/images/${item}.png`}
                   alt="Slide da galeria"

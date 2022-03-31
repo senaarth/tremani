@@ -12,8 +12,13 @@ export function HeaderLink({ href, label }: LinkProps) {
   const isActive = router?.pathname?.includes(href);
 
   return (
-    <a href={href} className={isActive ? "active" : ""}>
+    <button
+      type="button"
+      onClick={() => router.push(href)}
+      className={isActive ? "active" : ""}
+      disabled={isActive}
+    >
       {label}
-    </a>
+    </button>
   );
 }
