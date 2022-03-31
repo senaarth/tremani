@@ -84,7 +84,7 @@ export default function Estrutura(): JSX.Element {
       <ListContainer>
         {listItems?.map((item) => {
           return (
-            <ListItem>
+            <ListItem key={item.label}>
               <img src={`/images/${item.img}`} alt={item.label} />
               <p>{item.label}</p>
             </ListItem>

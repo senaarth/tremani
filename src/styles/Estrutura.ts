@@ -12,8 +12,10 @@ export const ListContainer = styled.div`
 
   margin-bottom: 8.5rem;
 
-  @media (min-width: 1067px) {
-    justify-content: center;
+  @media (min-width: 774px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 `;
 
@@ -45,9 +47,8 @@ export const ListItem = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 1067px) {
-    width: 33.33%;
-    max-width: 20rem;
-    justify-content: center;
+  @media (min-width: 774px) {
+    width: 100%;
+    margin: 0;
   }
 `;
