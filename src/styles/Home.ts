@@ -7,14 +7,14 @@ export const Slider = styled.div`
   top: 0;
   left: 0;
 
-  background: url(/images/foto1.png) center center no-repeat;
+  background: url(/images/foto1.jpg) center center no-repeat;
   background-size: cover;
 
   animation: slider 60s ease-in infinite;
 
   @keyframes slider {
     10% {
-      background: url(/images/foto1.png) center center no-repeat;
+      background: url(/images/foto1.jpg) center center no-repeat;
       background-size: cover;
     }
 
@@ -34,7 +34,7 @@ export const Slider = styled.div`
     }
 
     50% {
-      background: url(/images/foto1.png) center center no-repeat;
+      background: url(/images/foto1.jpg) center center no-repeat;
       background-size: cover;
     }
 
@@ -54,7 +54,7 @@ export const Slider = styled.div`
     }
 
     90% {
-      background: url(/images/foto1.png) center center no-repeat;
+      background: url(/images/foto1.jpg) center center no-repeat;
       background-size: cover;
     }
 
