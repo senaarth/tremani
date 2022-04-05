@@ -32,11 +32,11 @@ export const ContentContainer = styled.footer`
   justify-content: center;
   flex-wrap: wrap;
 
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   p,
   a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .row {
@@ -54,7 +54,7 @@ export const ContentContainer = styled.footer`
     } */
 
     img {
-      width: 1.25rem;
+      width: 1rem;
       margin-right: 1rem;
     }
   }
@@ -93,11 +93,11 @@ export const IconsContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  max-width: 160px;
+  max-width: 120px;
 
   a {
     width: 20%;
-    max-width: 1.875rem;
+    max-width: 1.25rem;
     transition: filter 0.4s;
 
     display: flex;

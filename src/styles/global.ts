@@ -52,11 +52,12 @@ export const PageContainer = styled.div`
     color: #425d73;
     margin-bottom: 2rem;
     font-weight: 300;
+    text-transform: uppercase;
   }
 
   p {
     color: #666666;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
     margin-bottom: 7.5rem;

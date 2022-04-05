@@ -11,7 +11,7 @@ export function Footer() {
           <img
             src="/images/ico-contato.png"
             alt="Icone de E-mail"
-            style={{ width: "1.75rem" }}
+            style={{ width: "1.5rem" }}
           />
           <a href="mailto:contato@vilatremani.com.br">
             contato@vilatremani.com.br
@@ -24,7 +24,7 @@ export function Footer() {
             style={{ opacity: 0.4 }}
           />
           <p>
-            <span style={{ fontSize: "0.75rem" }}>11</span> 4703.4616 •
+            <span style={{ fontSize: "0.75rem" }}>11</span> • 4703.4616 •
             993768686
           </p>
         </div>

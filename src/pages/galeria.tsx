@@ -34,9 +34,9 @@ export default function Galeria(): JSX.Element {
   ];
 
   function handleClick(index: number) {
-    const sliderEl = document.querySelector(".embla");
+    const header = document.querySelector("header");
 
-    sliderEl?.scrollIntoView({ behavior: "smooth" });
+    header?.scrollIntoView({ behavior: "smooth" });
     embla?.scrollTo(index);
 
     setSlider(true);

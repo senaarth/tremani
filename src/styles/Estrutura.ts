@@ -29,7 +29,7 @@ export const ListItem = styled.div`
 
   p {
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.25rem;
     margin: 0;
     text-align: left;
@@ -39,8 +39,8 @@ export const ListItem = styled.div`
   }
 
   img {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   @media (max-width: 630px) {

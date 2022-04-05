@@ -48,12 +48,16 @@ export const ContentContainer = styled.header`
   padding: 1.5rem 0;
 
   a.logo {
-    width: 15%;
+    width: 30%;
     min-width: 5rem;
-    max-width: 20rem;
+    max-width: 10rem;
 
     img {
       width: 100%;
+    }
+
+    &:hover {
+      filter: brightness(0.8);
     }
   }
 `;
@@ -75,7 +79,7 @@ export const Navigation = styled.nav`
       list-style: none;
 
       button {
-        font-size: 1rem;
+        font-size: 0.8rem;
         letter-spacing: 2.5px;
 
         &.active,
@@ -109,7 +113,7 @@ export const Navigation = styled.nav`
     transform: translateX(100%);
     transition: transform 0.6s;
 
-    top: 6rem;
+    top: 5.95rem;
     left: 0;
 
     width: 100vw;

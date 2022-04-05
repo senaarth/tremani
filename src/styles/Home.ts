@@ -10,7 +10,7 @@ export const Slider = styled.div`
   background: url(/images/foto1.jpg) center center no-repeat;
   background-size: cover;
 
-  animation: slider 60s ease-in infinite;
+  /* animation: slider 60s ease-in infinite; */
 
   @keyframes slider {
     10% {

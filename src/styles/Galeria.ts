@@ -6,7 +6,7 @@ export const GaleriaContainer = styled.div`
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 0.375rem;
 
   transition: margin 0.5s;
 
@@ -106,14 +106,15 @@ export const SliderContainer = styled.div`
   }
 
   &.visible {
-    height: 50vh;
+    margin-top: 8rem;
+    height: 30vh;
 
     @media (min-width: 1000px) {
       height: 70vh;
     }
 
     .embla {
-      height: 50vh;
+      height: 30vh;
 
       @media (min-width: 1000px) {
         height: 70vh;
@@ -121,7 +122,7 @@ export const SliderContainer = styled.div`
     }
 
     .embla__slide {
-      height: 50vh;
+      height: 30vh;
 
       @media (min-width: 1000px) {
         height: 70vh;
