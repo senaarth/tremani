@@ -6,15 +6,17 @@ import { Agende } from "../components/Agende";
 import { PageContainer } from "../styles/global";
 
 /**
- * Corporativo Page
+ * Contato Page
  * @return {JSX.Element}
  */
 
-export default function Corporativo(): JSX.Element {
+export default function Contato(): JSX.Element {
   return (
     <PageContainer
       style={{
-        marginTop: "10rem",
+        margin: 0,
+        padding: 0,
+        flex: 1,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -23,7 +25,7 @@ export default function Corporativo(): JSX.Element {
       <Head>
         <title>Contato | Vila Tremani</title>
       </Head>
-      <Agende />
+      <Agende customStyles={{ padding: "4rem 0 0" }} />
     </PageContainer>
   );
 }
