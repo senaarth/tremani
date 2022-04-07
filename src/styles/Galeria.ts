@@ -106,7 +106,7 @@ export const SliderContainer = styled.div`
   }
 
   &.visible {
-    margin-top: 8rem;
+    margin-top: 2rem;
     height: 30vh;
 
     @media (min-width: 1000px) {

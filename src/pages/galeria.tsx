@@ -34,16 +34,17 @@ export default function Galeria(): JSX.Element {
   ];
 
   function handleClick(index: number) {
-    const header = document.querySelector("header");
+    const top = document.querySelector("#top");
 
-    header?.scrollIntoView({ behavior: "smooth" });
+    top?.scrollIntoView({ behavior: "smooth" });
     embla?.scrollTo(index);
 
     setSlider(true);
   }
 
   return (
-    <PageContainer>
+    <PageContainer style={{ paddingTop: 0 }}>
+      <span id="top" />
       <SliderContainer className={slider ? "visible" : ""}>
         <div className="control left">
           <button
@@ -82,7 +83,7 @@ export default function Galeria(): JSX.Element {
           </button>
         </div>
       </SliderContainer>
-      <GaleriaContainer style={{ marginTop: slider ? "2rem" : "8rem" }}>
+      <GaleriaContainer style={{ marginTop: "2rem" }}>
         {items.map((item) => {
           return (
             <button

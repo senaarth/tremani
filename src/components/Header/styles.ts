@@ -3,16 +3,19 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   min-height: 6rem;
-  z-index: 2;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-color: black;
-  opacity: 0.7 !important;
-  position: relative;
+  background-color: #777e86;
+  /* opacity: 0.7 !important; */
+  z-index: 99;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 
   * {
     color: rgba(255, 255, 255, 0.5);
@@ -22,17 +25,17 @@ export const Container = styled.div`
     cursor: pointer;
 
     &:hover {
-      filter: brightness(0.6);
+      filter: brightness(0.8);
     }
   }
 
-  transition: opacity 0.6s;
+  /* transition: opacity 0.6s; */
 
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     &.active {
       opacity: 1 !important;
     }
-  }
+  } */
 `;
 
 export const ContentContainer = styled.header`
@@ -117,7 +120,7 @@ export const Navigation = styled.nav`
     left: 0;
 
     width: 100vw;
-    background-color: black;
+    background-color: #777e86;
 
     ul {
       flex-direction: column;

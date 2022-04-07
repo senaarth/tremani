@@ -19,7 +19,7 @@ export function Footer() {
         </div>
         <div className="row">
           <img
-            src="/images/ico-telefone.png"
+            src="/images/ico-whatsapp.png"
             alt="Icone de Telefone"
             style={{ opacity: 0.4 }}
           />

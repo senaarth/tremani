@@ -8,8 +8,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: black;
-  opacity: 0.7;
+  background-color: #777e86;
+  /* opacity: 0.7; */
 
   * {
     color: rgba(255, 255, 255, 0.5);

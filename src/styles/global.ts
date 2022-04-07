@@ -29,20 +29,25 @@ export default createGlobalStyle`
 `;
 
 export const PageContainer = styled.div`
-  transform: translateY(-6rem);
+  padding-top: 6rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   width: 100%;
-  /* padding-bottom: 7.25rem; */
+  padding-bottom: 7.25rem;
 
   .banner {
     width: 100vw;
     margin-bottom: 3rem;
     min-height: 15rem;
     object-fit: cover;
+  }
+
+  #top {
+    width: 100vw;
+    height: 6rem;
   }
 
   h1 {

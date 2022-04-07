@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import { Slider } from "../styles/Home";
+import { Container } from "../styles/Home";
 
 /**
  * Home Page
@@ -9,22 +9,22 @@ import { Slider } from "../styles/Home";
  */
 
 export default function Home(): JSX.Element {
-  const [innerHeight, setInnerHeight] = React.useState<string | number>(
-    "100vh"
-  );
+  // const [innerHeight, setInnerHeight] = React.useState<string | number>(
+  //   "100vh"
+  // );
 
-  React.useEffect(() => {
-    if (window) {
-      setInnerHeight(window.innerHeight);
-    }
-  }, []);
+  // React.useEffect(() => {
+  //   if (window) {
+  //     setInnerHeight(window.innerHeight);
+  //   }
+  // }, []);
 
   return (
-    <div>
+    <Container>
       <Head>
         <title>Home | Vila Tremani</title>
       </Head>
-      <Slider style={{ height: innerHeight }} />
-    </div>
+      <img src="/images/foto1.jpg" alt="Background" />
+    </Container>
   );
 }
