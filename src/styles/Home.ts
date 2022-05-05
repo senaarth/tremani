@@ -15,69 +15,47 @@ export const Container = styled.div`
     flex: 1;
     object-fit: cover;
   }
-`;
 
-export const Slider = styled.div`
-  width: 100vw;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background: url(/images/foto1.jpg) center center no-repeat;
   background-size: cover;
 
-  /* animation: slider 60s ease-in infinite; */
+  animation: slider 36s ease-in infinite;
 
   @keyframes slider {
-    10% {
-      background: url(/images/foto1.jpg) center center no-repeat;
+    0% {
+      background: url(/images/home1.jpg) center center no-repeat;
       background-size: cover;
     }
 
-    20% {
-      background: url(/images/foto2.png) center center no-repeat;
-      background-size: cover;
-    }
-
-    30% {
-      background: url(/images/foto3.png) center center no-repeat;
-      background-size: cover;
-    }
-
-    40% {
+    25% {
       background: url(/images/foto4.png) center center no-repeat;
       background-size: cover;
     }
 
     50% {
-      background: url(/images/foto1.jpg) center center no-repeat;
+      background: url(/images/home1.jpg) center center no-repeat;
       background-size: cover;
     }
 
-    60% {
-      background: url(/images/foto2.png) center center no-repeat;
-      background-size: cover;
-    }
-
-    70% {
-      background: url(/images/foto3.png) center center no-repeat;
-      background-size: cover;
-    }
-
-    80% {
+    75% {
       background: url(/images/foto4.png) center center no-repeat;
       background-size: cover;
     }
 
-    90% {
-      background: url(/images/foto1.jpg) center center no-repeat;
-      background-size: cover;
-    }
-
     100% {
-      background: url(/images/foto2.png) center center no-repeat;
+      background: url(/images/home1.jpg) center center no-repeat;
       background-size: cover;
     }
+  }
+`;
+
+export const Video = styled.video`
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
