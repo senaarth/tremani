@@ -88,7 +88,7 @@ export const Navigation = styled.nav`
         &.active,
         &:disabled {
           color: white;
-          font-weight: 500;
+          font-weight: 700;
 
           filter: brightness(1) !important;
           cursor: default;

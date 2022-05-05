@@ -19,12 +19,13 @@ export default createGlobalStyle`
   html, body, #__next {
     width: 100%;
     height: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #f3f2f0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 `;
 
@@ -39,7 +40,7 @@ export const PageContainer = styled.div`
   padding-bottom: 7.25rem;
 
   .banner {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 3rem;
     min-height: 15rem;
     object-fit: cover;

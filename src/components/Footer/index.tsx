@@ -21,7 +21,7 @@ export function Footer() {
           <img
             src="/images/ico-whatsapp.png"
             alt="Icone de Telefone"
-            style={{ opacity: 0.4 }}
+            style={{ opacity: 0.7 }}
           />
           <p>
             <span style={{ fontSize: "0.75rem" }}>11</span> • 4703.4616 •

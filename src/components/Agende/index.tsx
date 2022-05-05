@@ -2,9 +2,14 @@ import React from "react";
 
 import { Container, ImagesContainer } from "./styles";
 
-export function Agende() {
+interface AgendeProps {
+  // eslint-disable-next-line react/require-default-props
+  customStyles?: {};
+}
+
+export function Agende({ customStyles = {} }: AgendeProps) {
   return (
-    <Container id="agende">
+    <Container id="agende" style={customStyles}>
       <h1>AGENDE SUA VISITA</h1>
       <ImagesContainer>
         <img src="/images/img02.png" alt="" />

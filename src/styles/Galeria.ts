@@ -111,6 +111,7 @@ export const SliderContainer = styled.div`
 
     @media (min-width: 1000px) {
       height: 70vh;
+      max-height: 60rem;
     }
 
     .embla {
@@ -118,6 +119,7 @@ export const SliderContainer = styled.div`
 
       @media (min-width: 1000px) {
         height: 70vh;
+        max-height: 60rem;
       }
     }
 
@@ -126,6 +128,7 @@ export const SliderContainer = styled.div`
 
       @media (min-width: 1000px) {
         height: 70vh;
+        max-height: 60rem;
       }
 
       object-fit: cover;

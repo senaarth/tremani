@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
       <Head>
         <title>Home | Vila Tremani</title>
       </Head>
-      <Video autoPlay muted loop>
+      <Video autoPlay muted loop playsInline>
         <source src="/videos/movie_mobile.mp4" type="video/mp4" />
       </Video>
     </Container>

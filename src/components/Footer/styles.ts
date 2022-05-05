@@ -10,14 +10,13 @@ export const Container = styled.div`
   justify-content: center;
 
   background-color: #777e86;
-  /* opacity: 0.7; */
 
   * {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   img {
-    opacity: 0.6;
+    opacity: 1;
     filter: grayscale(1);
   }
 `;
@@ -106,12 +105,12 @@ export const IconsContainer = styled.div`
     justify-content: center;
 
     &:hover {
-      filter: brightness(0.6);
+      filter: brightness(0.8);
     }
 
     img {
       width: 100%;
-      opacity: 0.4;
+      opacity: 0.7;
     }
   }
 `;

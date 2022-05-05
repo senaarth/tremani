@@ -5,7 +5,7 @@ import { PageContainer } from "../styles/global";
 import { GaleriaContainer, SliderContainer } from "../styles/Galeria";
 
 /**
- * Estrutura Page
+ * Galeria Page
  * @return {JSX.Element}
  */
 
@@ -34,17 +34,14 @@ export default function Galeria(): JSX.Element {
   ];
 
   function handleClick(index: number) {
-    const top = document.querySelector("#top");
-
-    top?.scrollIntoView({ behavior: "smooth" });
+    window?.scroll({ top: 0, left: 0, behavior: "smooth" });
     embla?.scrollTo(index);
 
     setSlider(true);
   }
 
   return (
-    <PageContainer style={{ paddingTop: 0 }}>
-      <span id="top" />
+    <PageContainer style={{ paddingTop: "6rem" }}>
       <SliderContainer className={slider ? "visible" : ""}>
         <div className="control left">
           <button
