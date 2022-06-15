@@ -16,7 +16,7 @@ export default function Social(): JSX.Element {
       <Head>
         <title>Social | Vila Tremani</title>
       </Head>
-      <img src="/images/img07.png" alt="" className="banner" />
+      <img src="/images/foto-social.jpg" alt="" className="banner" />
       <h1>Social</h1>
       <p>
         O cenário perfeito para seu evento dos sonhos. Casamentos, Debutantes,

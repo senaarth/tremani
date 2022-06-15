@@ -17,7 +17,7 @@ export default function Localizacao(): JSX.Element {
       <Head>
         <title>Localização | Vila Tremani</title>
       </Head>
-      <img src="/images/img06.png" alt="" className="banner" />
+      <img src="/images/foto-localizacao.jpg" alt="" className="banner" />
       <Container>
         <div>
           <h1>Localização</h1>

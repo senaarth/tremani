@@ -16,7 +16,7 @@ export default function Corporativo(): JSX.Element {
       <Head>
         <title>Corporativo | Vila Tremani</title>
       </Head>
-      <img src="/images/img01.png" alt="" className="banner" />
+      <img src="/images/foto-corporativo.jpg" alt="" className="banner" />
       <h1>Corporativo</h1>
       <p>
         A estrutura perfeita para seu evento corporativos. Workshops,

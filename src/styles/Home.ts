@@ -22,27 +22,27 @@ export const Container = styled.div`
 
   @keyframes slider {
     0% {
-      background: url(/images/home1.jpg) center center no-repeat;
+      background: url(/images/foto-home1.jpg) center center no-repeat;
       background-size: cover;
     }
 
     25% {
-      background: url(/images/foto4.png) center center no-repeat;
+      background: url(/images/foto-home2.jpg) center center no-repeat;
       background-size: cover;
     }
 
     50% {
-      background: url(/images/home1.jpg) center center no-repeat;
+      background: url(/images/foto-home1.jpg) center center no-repeat;
       background-size: cover;
     }
 
     75% {
-      background: url(/images/foto4.png) center center no-repeat;
+      background: url(/images/foto-home2.jpg) center center no-repeat;
       background-size: cover;
     }
 
     100% {
-      background: url(/images/home1.jpg) center center no-repeat;
+      background: url(/images/foto-home1.jpg) center center no-repeat;
       background-size: cover;
     }
   }

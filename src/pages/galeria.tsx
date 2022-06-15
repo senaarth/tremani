@@ -13,24 +13,33 @@ export default function Galeria(): JSX.Element {
   const [emblaRef, embla] = useEmblaCarousel({ draggable: true, loop: true });
   const [slider, setSlider] = React.useState(false);
   const items = [
-    "001",
-    "002",
-    "003",
-    "004",
-    "005",
-    "006",
-    "007",
-    "008",
-    "009",
-    "010",
-    "011",
-    "012",
-    "013",
-    "014",
-    "015",
-    "016",
-    "017",
-    "018",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
   ];
 
   function handleClick(index: number) {
@@ -61,7 +70,7 @@ export default function Galeria(): JSX.Element {
                 <img
                   key={`galeria-${item}`}
                   className="embla__slide"
-                  src={`/images/${item}.png`}
+                  src={`/images/D${item}.jpg`}
                   alt="Slide da galeria"
                 />
               );
@@ -88,7 +97,7 @@ export default function Galeria(): JSX.Element {
               type="button"
               onClick={() => handleClick(parseInt(item, 10) - 1)}
             >
-              <img src={`/images/${item}.png`} alt="Imagem galeria" />
+              <img src={`/images/${item}.jpg`} alt="Imagem galeria" />
             </button>
           );
         })}
