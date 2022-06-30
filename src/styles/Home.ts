@@ -46,16 +46,33 @@ export const Container = styled.div`
       background-size: cover;
     }
   }
-`;
 
-export const Video = styled.video`
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  @media (max-width: 768px) {
+    @keyframes slider {
+      0% {
+        background: url(/images/fotohome1_mobile.jpg) center center no-repeat;
+        background-size: cover;
+      }
 
-  @media (min-width: 768px) {
-    display: none;
+      25% {
+        background: url(/images/fotohome2_mobile.jpg) center center no-repeat;
+        background-size: cover;
+      }
+
+      50% {
+        background: url(/images/fotohome1_mobile.jpg) center center no-repeat;
+        background-size: cover;
+      }
+
+      75% {
+        background: url(/images/fotohome2_mobile.jpg) center center no-repeat;
+        background-size: cover;
+      }
+
+      100% {
+        background: url(/images/fotohome1_mobile.jpg) center center no-repeat;
+        background-size: cover;
+      }
+    }
   }
 `;
